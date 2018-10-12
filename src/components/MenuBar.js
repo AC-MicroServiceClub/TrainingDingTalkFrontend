@@ -25,15 +25,15 @@ const MenuBar = (props) => {
 
   return (
     <div>
-      <WhiteSpace size="lg" />
+      <WhiteSpace />
       <div className={styles['sub-title']}>学生专栏</div>
-      <Grid data={anyOneMenus} columnNum={4} hasLine={false} activeStyle={true} onClick={(el, index) => { props.history.push(el.path) }} />
+      <Grid data={anyOneMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
       {
         auth.isTeacher(props.user) ? (
           <div>
-            <WhiteSpace size="lg" />
+            <WhiteSpace />
             <div className={styles['sub-title']}>教学专栏</div>
-            <Grid data={teacherMenus} columnNum={4} hasLine={false} activeStyle={true} onClick={(el, index) => { props.history.push(el.path) }} />
+            <Grid data={teacherMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
           </div>
         ) : (
           <div></div>
@@ -42,15 +42,15 @@ const MenuBar = (props) => {
       {
         auth.isAdmin(props.user) ? (
           <div>
-            <WhiteSpace size="lg" />
+            <WhiteSpace />
             <div className={styles['sub-title']}>管理专栏</div>
-            <Grid data={adminMenus} columnNum={4} hasLine={false} activeStyle={true} onClick={(el, index) => { props.history.push(el.path) }} />
+            <Grid data={adminMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
           </div>
         ) : (
           <div></div>
         )
       }
-      <WhiteSpace size="lg" />
+      <WhiteSpace />
     </div>
   );
 };
