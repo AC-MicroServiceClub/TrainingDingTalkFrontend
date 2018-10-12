@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import { browserHistory } from 'react-router'
 import { Grid, WhiteSpace } from 'antd-mobile';
-import auth from '../utils/Auth';
+import auth from '../utils/auth';
 import styles from './MenuBar.css';
 
 const MenuBar = (props) => {
