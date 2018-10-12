@@ -1,0 +1,11 @@
+$ npm install dva-cli -g
+$ npm install antd-mobile --save
+$ npm install react-native --save
+$ npm install babel-plugin-import --save-dev
+
+.webpackrc文件内容：
+{
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd-mobile", "style": "css" }]
+  ]
+}
