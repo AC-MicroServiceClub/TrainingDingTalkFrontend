@@ -6,7 +6,7 @@ export default {
   state: {
     myTraining: {
       text: '我的培训',
-      path: '',
+      path: '/my-training',
       icon: require('../assets/menu-my-training.png')
     },
     trainingList: {
@@ -16,42 +16,42 @@ export default {
     },
     annualPlan: {
       text: '年度计划',
-      path: '',
+      path: '/annual-plan',
       icon: require('../assets/menu-annual-plan.png')
     },
     teacherCourseList: {
       text: '我讲的课',
-      path: '',
+      path: '/teacher-course-list',
       icon: require('../assets/menu-teacher-course-list.png')
     },
     teacherSetting: {
       text: '讲师设置',
-      path: '',
+      path: '/teacher-setting',
       icon: require('../assets/menu-teacher-setting.png')
     },
     adminPlanMangement: {
       text: '计划管理',
-      path: '',
+      path: '/plan-mangement',
       icon: require('../assets/menu-admin-plan-mangement.png')
     },
     adminTrainingMangement: {
       text: '培训管理',
-      path: '',
+      path: '/training-mangement',
       icon: require('../assets/menu-admin-training-mangement.png')
     },
     adminTrainingApproval: {
       text: '培训审批',
-      path: '',
+      path: '/training-approval',
       icon: require('../assets/menu-admin-training-approval.png')
     },
     adminSigninMangement: {
       text: '签到管理',
-      path: '',
+      path: '/signin-mangement',
       icon: require('../assets/menu-admin-signin-mangement.png')
     },
     adminFeedbackMangement: {
       text: '反馈管理',
-      path: '',
+      path: '/feedback-mangement',
       icon: require('../assets/menu-admin-feedback-mangement.png')
     }
   },
