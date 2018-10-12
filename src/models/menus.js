@@ -31,27 +31,27 @@ export default {
     },
     adminPlanMangement: {
       text: '计划管理',
-      path: '/plan-mangement',
+      path: '/admin-plan-mangement',
       icon: require('../assets/menu-admin-plan-mangement.png')
     },
     adminTrainingMangement: {
       text: '培训管理',
-      path: '/training-mangement',
+      path: '/admin-training-mangement',
       icon: require('../assets/menu-admin-training-mangement.png')
     },
     adminTrainingApproval: {
       text: '培训审批',
-      path: '/training-approval',
+      path: '/admin-training-approval',
       icon: require('../assets/menu-admin-training-approval.png')
     },
     adminSigninMangement: {
       text: '签到管理',
-      path: '/signin-mangement',
+      path: '/admin-signin-mangement',
       icon: require('../assets/menu-admin-signin-mangement.png')
     },
     adminFeedbackMangement: {
       text: '反馈管理',
-      path: '/feedback-mangement',
+      path: '/admin-feedback-mangement',
       icon: require('../assets/menu-admin-feedback-mangement.png')
     }
   },

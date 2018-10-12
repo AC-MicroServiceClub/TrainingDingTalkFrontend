@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'dva';
 import { NavBar, Icon } from 'antd-mobile';
-import styles from './TrainingListPage.css';
+import styles from './TeacherSettingPage.css';
 
 @connect(({ user, menus }) => ({
   user: user,
   menus: menus
 }))
-export default class TrainingListPage extends React.Component {
+export default class TeacherSettingPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,14 +16,14 @@ export default class TrainingListPage extends React.Component {
 
   render() {
     return (
-	  <NavBar
+      <NavBar
         mode="light"
         icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.trainingList.text}</NavBar>
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.teacherSetting.text}</NavBar>
     );
   }
 }
 
-TrainingListPage.propTypes = {
+  TeacherSettingPage.propTypes = {
 };
 
