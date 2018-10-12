@@ -25,18 +25,14 @@ export default class IndexPage extends React.Component {
           <MenuBar history={this.props.history} user={this.props.user} />
         </div>
       );
-    }
-
-    if ('resource' == pageIndex) {
+    } else if ('resource' == pageIndex) {
       return (
         <div style={{height: '100%', background: '#fff'}}>
           <SearchBar placeholder="搜索全部课程资料/讲师" maxLength={10} />
           <SearchList />
         </div>
       );
-    }
-
-    if ('my' == pageIndex) {
+    } else if ('my' == pageIndex) {
       return (
         <div style={{height: '100%', background: '#fff'}}>
           
