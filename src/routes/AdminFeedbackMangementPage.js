@@ -24,6 +24,6 @@ export default class AdminFeedbackMangementPage extends React.Component {
   }
 }
 
-  AdminFeedbackMangementPage.propTypes = {
+AdminFeedbackMangementPage.propTypes = {
 };
 

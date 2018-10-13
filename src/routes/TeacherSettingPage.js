@@ -24,6 +24,6 @@ export default class TeacherSettingPage extends React.Component {
   }
 }
 
-  TeacherSettingPage.propTypes = {
+TeacherSettingPage.propTypes = {
 };
 

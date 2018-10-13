@@ -24,6 +24,6 @@ export default class AdminSigninMangementPage extends React.Component {
   }
 }
 
-  AdminSigninMangementPage.propTypes = {
+AdminSigninMangementPage.propTypes = {
 };
 

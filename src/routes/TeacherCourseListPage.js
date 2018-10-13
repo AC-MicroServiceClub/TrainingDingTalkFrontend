@@ -24,6 +24,6 @@ export default class TeacherCourseListPage extends React.Component {
   }
 }
 
-  TeacherCourseListPage.propTypes = {
+TeacherCourseListPage.propTypes = {
 };
 

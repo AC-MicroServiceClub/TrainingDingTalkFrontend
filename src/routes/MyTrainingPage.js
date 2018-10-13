@@ -24,6 +24,6 @@ export default class MyTrainingPage extends React.Component {
   }
 }
 
-  MyTrainingPage.propTypes = {
+MyTrainingPage.propTypes = {
 };
 

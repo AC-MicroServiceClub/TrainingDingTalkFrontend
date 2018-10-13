@@ -1,5 +1,5 @@
 {
   "externals": {
-    "dd": "window.dd"
+    "ddDebug": "window.ddDebug"
   }
 };

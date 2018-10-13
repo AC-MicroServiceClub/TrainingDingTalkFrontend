@@ -24,6 +24,6 @@ export default class AnnualPlanPage extends React.Component {
   }
 }
 
-  AnnualPlanPage.propTypes = {
+AnnualPlanPage.propTypes = {
 };
 

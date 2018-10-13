@@ -24,6 +24,6 @@ export default class AdminTrainingApprovalPage extends React.Component {
   }
 }
 
-  AdminTrainingApprovalPage.propTypes = {
+AdminTrainingApprovalPage.propTypes = {
 };
 

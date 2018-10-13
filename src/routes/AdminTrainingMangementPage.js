@@ -24,6 +24,6 @@ export default class AdminTrainingMangementPage extends React.Component {
   }
 }
 
-  AdminTrainingMangementPage.propTypes = {
+AdminTrainingMangementPage.propTypes = {
 };
 
