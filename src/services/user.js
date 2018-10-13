@@ -6,8 +6,8 @@ const userid = {
 };
 
 // 免登录设置
+console.info(JSON.stringify(dd));
 if ('notInDingTalk' != dd.env.platform) {
-  console.info(JSON.stringify(dd));
   dd.ready(function() {
     dd.runtime.permission.requestAuthCode({
       corpId: 'ding11e2d6305c40beeb35c2f4657eb6378f',
