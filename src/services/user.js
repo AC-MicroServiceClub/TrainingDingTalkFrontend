@@ -10,15 +10,17 @@ const userid = {
 // 免登录设置
 ReactDOM.render(
   <NoticeBar mode="link" action={<span>Debug</span>}>
-    {JSON.stringify(dd.env.platform)}
+    {JSON.stringify(dd)}
   </NoticeBar>,
   document.getElementById("notice")
 );
-if ('notInDingTalk' != dd.env.platform) {
+if ('notInDingTalk' == dd.env.platform) {
   dd.ready(function() {
+    dd.env.platform = 'ios';
     dd.runtime.permission.requestAuthCode({
       corpId: 'ding11e2d6305c40beeb35c2f4657eb6378f',
         onSuccess: function(result) {
+          alert(result);
           // 通过免登录code获取userid并保存到常量userid对象中
           userid.val = restful.get('https://oapi.dingtalk.com/user/getuserinfo', {access_token: '', code: result.code});
         },

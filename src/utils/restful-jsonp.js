@@ -1,4 +1,4 @@
-import request from '../utils/request';
+import request from '../utils/request-jsonp';
 import requestUrl from '../utils/request-url';
 
 const options = {
