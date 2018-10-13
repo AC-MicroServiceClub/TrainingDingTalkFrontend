@@ -1,3 +1,4 @@
+import * as userService from '../services/user';
 
 export default {
 
@@ -16,6 +17,9 @@ export default {
     *fetch({ payload }, { call, put }) {  // eslint-disable-line
       yield put({ type: 'save' });
     },
+    *getUserInfo({ payload }, { call, put }) {
+      const user =  yield call(userService.getUserInfo, {});
+    }
   },
 
   reducers: {
