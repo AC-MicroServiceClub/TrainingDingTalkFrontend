@@ -1,5 +1,6 @@
 
 html, body, :global(#root) {
+	background: #fff;
   height: 100%;
   font-family: 'MicrosoftYaHei'
 }
