@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import { NavBar, Icon, Tabs, Badge, List, Item } from 'antd-mobile';
+import { NavBar, Icon, Tabs, Badge, List } from 'antd-mobile';
 import styles from './AnnualPlanPage.css';
 
 const tabs = [
@@ -41,15 +41,71 @@ export default class AnnualPlanPage extends React.Component {
           initialPage={month}
           onChange={(tab, index) => { console.log('onChange', index, tab); }}
           onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div>
+            <List renderHeader={() => 'Basic Style'}>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+              <List.Item extra={'extra content'}>Title</List.Item>
+            </List>
+          </div>
         </Tabs>
-        <List renderHeader={() => 'Basic Style'}>
-          <List.Item extra={'extra content'}>Title</List.Item>
-          <List.Item extra={'extra content'}>Title</List.Item>
-          <List.Item extra={'extra content'}>Title</List.Item>
-          <List.Item extra={'extra content'}>Title</List.Item>
-          <List.Item extra={'extra content'}>Title</List.Item>
-          <List.Item extra={'extra content'}>Title</List.Item>
-        </List>
       </div>
     );
   }
