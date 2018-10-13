@@ -13,11 +13,17 @@ if ('notInDingTalk' != dd.env.platform) {
     dd.runtime.permission.requestAuthCode({
       corpId: 'ding11e2d6305c40beeb35c2f4657eb6378f',
         onSuccess: function(result) {
+          ReactDOM.render(
+            <NoticeBar mode="link" action={<span>Debug</span>}>
+              {JSON.stringify(result)}
+            </NoticeBar>,
+            document.getElementById("notice")
+          );
           // 通过免登录code获取userid并保存到常量userid对象中
           userid.val = restful.get('https://oapi.dingtalk.com/user/getuserinfo', {access_token: '', code: result.code});
           ReactDOM.render(
             <NoticeBar mode="link" action={<span>Debug</span>}>
-              {userid.val}
+              {JSON.stringify(userid)}
             </NoticeBar>,
             document.getElementById("notice")
           );
