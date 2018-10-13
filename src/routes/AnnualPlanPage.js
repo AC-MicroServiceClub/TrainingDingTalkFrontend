@@ -30,14 +30,15 @@ export default class AnnualPlanPage extends React.Component {
   }
 
   render() {
-    return (
+    let month = new Date().getMonth();
+	return (
       <div>
         <NavBar
           mode="light"
           icon={<Icon type="left" />}
           onLeftClick={() => this.props.history.push('/')}>{this.props.menus.annualPlan.text}</NavBar>
         <Tabs tabs={tabs}
-          initialPage={1}
+          initialPage={month}
           onChange={(tab, index) => { console.log('onChange', index, tab); }}
           onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}>
         </Tabs>
