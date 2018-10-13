@@ -3,43 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="yes" name="apple-touch-fullscreen">
-  <meta content="telephone=no,email=no" name="format-detection">
-  <script src="viewport.js"></script> -->
   <title>training map</title>
   <link rel="stylesheet" href="index.css" />
-  <script type="text/javascript" src="http://g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js"></script>
-  <script type="text/javascript">
-    dd.runtime.permission.requestAuthCode({
-    corpId : "ding11e2d6305c40beeb35c2f4657eb6378f",
-    onSuccess : function(info) {
-//      alert('authcode: ' + info.code);
-      $.ajax({
-        url : 'http://localhost/dingtalk-app-demo/userinfo?code=' + info.code + '&corpid='
-            + _config.corpId,
-        type : 'GET',
-        success : function(data, status, xhr) {
-            alert(data);
-        },
-        error : function(xhr, errorType, error) {
-          logger.e("yinyien:" + _config.corpId);
-          alert(errorType + ', ' + error);
-        }
-      });
-
-    },
-    onFail : function(err) {
-      alert('fail: ' + JSON.stringify(err));
-    }
-  });
-
-  </script>
 </head>
 <body>
 
   <div id="notice" style="position: absolute; z-index: 99999; width: 100%"></div>
-  <div id="notice1" style="position: absolute; z-index: 99999; width: 100%; top: 30px;"></div>
   <div id="root"></div>
   <script src="index.js"></script>
 

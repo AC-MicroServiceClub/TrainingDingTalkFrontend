@@ -21,12 +21,6 @@ if ('notInDingTalk' != dd.env.platform) {
           );
           // 通过免登录code获取userid并保存到常量userid对象中
           userid.val = restful.get('https://oapi.dingtalk.com/user/getuserinfo', {access_token: '', code: result.code});
-          ReactDOM.render(
-            <NoticeBar mode="link" action={<span>Debug</span>}>
-              {JSON.stringify(userid)}
-            </NoticeBar>,
-            document.getElementById("notice")
-          );
         },
         onFail : function(err) {}
     });
