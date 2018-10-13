@@ -8,7 +8,6 @@ const userid = {
 // 免登录设置
 if ('notInDingTalk' != dd.env.platform) {
   dd.ready(function() {
-    dd.env.platform = 'dingTalk';
     dd.runtime.permission.requestAuthCode({
       corpId: 'ding11e2d6305c40beeb35c2f4657eb6378f',
         onSuccess: function(result) {
