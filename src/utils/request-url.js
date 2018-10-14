@@ -27,7 +27,10 @@ class RequestUrl {
         return url + '&' + urlParamStr || '';
       }
     } else {
-      return url + '?' + urlParamStr || '';
+      if (urlParamStr) {
+        return url + '?' + urlParamStr || '';
+      }
+      return url;
     }
   }
 };

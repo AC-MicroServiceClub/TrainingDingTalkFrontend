@@ -1,7 +1,6 @@
 import restful from '../utils/restful';
 import * as dd from 'dingtalk-jsapi';
-import ReactDOM from 'react-dom';
-import { NoticeBar, Icon } from 'antd-mobile';
+import debug from '../utils/debug';
 
 const userid = {
 	val: ''

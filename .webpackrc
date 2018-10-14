@@ -1,5 +1,12 @@
 {
   "extraBabelPlugins": [
     ["import", { "libraryName": "antd-mobile", "style": "css" }]
-  ]
+  ],
+  "proxy": {
+    "/debug": {
+      "target": "http://localhost:4000/debug",
+      "changeOrigin": true,
+      "pathRewrite": { "^/debug" : "" }
+    }
+  }
 }
