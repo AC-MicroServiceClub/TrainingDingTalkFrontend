@@ -25,7 +25,6 @@ const IndexMenus = (props) => {
 
   return (
     <div>
-      <WhiteSpace size='xs' style={{background: '#eee'}} />
       <div className={styles['sub-title']}>学生专栏</div>
       <Grid data={anyOneMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
       {
