@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { browserHistory } from 'react-router'
-import { Grid, WhiteSpace } from 'antd-mobile';
+import { Grid, WhiteSpace, List } from 'antd-mobile';
 import auth from '../utils/auth';
 import styles from './IndexMenus.css';
 
@@ -25,7 +25,7 @@ const IndexMenus = (props) => {
 
   return (
     <div>
-      <WhiteSpace />
+      <WhiteSpace size='xs' style={{background: '#eee'}} />
       <div className={styles['sub-title']}>学生专栏</div>
       <Grid data={anyOneMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
       {
@@ -42,7 +42,7 @@ const IndexMenus = (props) => {
       {
         auth.isAdmin(props.user) ? (
           <div>
-            <WhiteSpace />
+            <WhiteSpace size='xs' style={{background: '#eee'}} />
             <div className={styles['sub-title']}>管理专栏</div>
             <Grid data={adminMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
           </div>
@@ -50,7 +50,6 @@ const IndexMenus = (props) => {
           <div></div>
         )
       }
-      <WhiteSpace />
     </div>
   );
 };

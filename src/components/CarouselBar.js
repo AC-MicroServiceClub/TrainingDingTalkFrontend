@@ -30,7 +30,7 @@ const CarouselBar  = () => {
           </a>
         ))}
       </Carousel>
-      <WhiteSpace />
+      <WhiteSpace size='xs' />
     </div>
   );
 };

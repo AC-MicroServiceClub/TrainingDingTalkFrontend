@@ -12,11 +12,18 @@
   width: 100%;
 }
 
+.title {
+	height: 44px;
+	line-height: 44px;
+	padding-top: 4px;
+	border-bottom: 1px solid #ddd;
+}
+
 .sub-title {
   font-size: 14px;
   line-height: 14px;
   margin: 10px 0 0 6px;
   padding: 2px 0 0 4px;
   font-weight: bold;
-  border-left: 4px solid orange;
+  border-left: 3px solid orange;
 }
