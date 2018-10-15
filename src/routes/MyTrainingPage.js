@@ -17,12 +17,10 @@ export default class MyTrainingPage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title={this.props.menus.myTraining.text}></DocumentTitle>
-      /*<NavBar
+      <NavBar
         mode="light"
         //icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.myTraining.text}</NavBar>*/
-      
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.myTraining.text}</NavBar>
     );
   }
 }

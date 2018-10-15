@@ -17,11 +17,10 @@ export default class AdminSigninMangementPage extends React.Component {
 
   render() {
     return (
-      /*<NavBar
+      <NavBar
         mode="light"
-        icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminSigninMangement.text}</NavBar>*/
-      <DocumentTitle title={this.props.menus.adminSigninMangement.text}></DocumentTitle>
+        //icon={<Icon type="left" />}
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminSigninMangement.text}</NavBar>
     );
   }
 }

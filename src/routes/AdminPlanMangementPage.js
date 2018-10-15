@@ -17,11 +17,10 @@ export default class AdminPlanMangementPage extends React.Component {
 
   render() {
     return (
-      /*<NavBar
+      <NavBar
         mode="light"
-        icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminPlanMangement.text}</NavBar>*/
-      <DocumentTitle title={this.props.menus.adminPlanMangement.text}></DocumentTitle>
+        //icon={<Icon type="left" />}
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminPlanMangement.text}</NavBar>
     );
   }
 }

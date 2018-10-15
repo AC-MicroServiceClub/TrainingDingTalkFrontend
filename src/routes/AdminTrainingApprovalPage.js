@@ -17,11 +17,10 @@ export default class AdminTrainingApprovalPage extends React.Component {
 
   render() {
     return (
-      /*<NavBar
+      <NavBar
         mode="light"
-        icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminTrainingApproval.text}</NavBar>*/
-      <DocumentTitle title={this.props.menus.adminTrainingApproval.text}></DocumentTitle>
+        //icon={<Icon type="left" />}
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminTrainingApproval.text}</NavBar>
     );
   }
 }

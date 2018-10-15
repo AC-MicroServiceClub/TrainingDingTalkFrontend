@@ -17,11 +17,10 @@ export default class TeacherCourseListPage extends React.Component {
 
   render() {
     return (
-      /*<NavBar
+      <NavBar
         mode="light"
-        icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.teacherCourseList.text}</NavBar>*/
-      <DocumentTitle title={this.props.menus.teacherCourseList.text}></DocumentTitle>
+        //icon={<Icon type="left" />}
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.teacherCourseList.text}</NavBar>
     );
   }
 }
