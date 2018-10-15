@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'dva';
 import { NavBar, SearchBar, Icon } from 'antd-mobile';
-import CourseTypesBar from '../components/CourseTypesBar';
+import ButtonGrid from '../components/ButtonGrid';
 import styles from './TrainingListPage.css';
 
-@connect(({ user, menus }) => ({
+@connect(({ user, menus, courseTypes }) => ({
   user: user,
-  menus: menus
+  menus: menus,
+  courseTypes: courseTypes
 }))
 export default class TrainingListPage extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ export default class TrainingListPage extends React.Component {
           mode="light"
           icon={<Icon type="left" />}
           onLeftClick={() => this.props.history.push('/')}>{this.props.menus.trainingList.text}</NavBar>
-        <CourseTypesBar history={this.props.history} />
+        <ButtonGrid items={this.props.courseTypes} colNum={5} history={this.props.history} />
         <SearchBar placeholder="课程/老师" maxLength={10} />
       </div>
     );

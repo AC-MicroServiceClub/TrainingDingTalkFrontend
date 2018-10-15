@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'dva';
 import { SearchBar, ListView, WhiteSpace } from 'antd-mobile';
-import PageBar from '../components/PageBar';
 import CarouselBar from '../components/CarouselBar';
-import MenuBar from '../components/MenuBar';
+import IndexTabs from '../components/IndexTabs';
+import IndexMenus from '../components/IndexMenus';
 import SearchList from '../components/SearchList';
 import styles from './IndexPage.css';
 
@@ -22,7 +22,7 @@ export default class IndexPage extends React.Component {
       return (
         <div style={{height: '100%', background: '#fff'}}>
           <CarouselBar />
-          <MenuBar history={this.props.history} user={this.props.user} />
+          <IndexMenus history={this.props.history} user={this.props.user} />
         </div>
       );
     } else if ('resource' == pageIndex) {
@@ -43,7 +43,7 @@ export default class IndexPage extends React.Component {
 
   render() {
     return (
-      <PageBar callback={this.renderContent.bind(this)} />
+      <IndexTabs callback={this.renderContent.bind(this)} />
     );
   }
 }

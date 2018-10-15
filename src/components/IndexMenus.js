@@ -3,9 +3,9 @@ import { connect } from 'dva';
 import { browserHistory } from 'react-router'
 import { Grid, WhiteSpace } from 'antd-mobile';
 import auth from '../utils/auth';
-import styles from './MenuBar.css';
+import styles from './IndexMenus.css';
 
-const MenuBar = (props) => {
+const IndexMenus = (props) => {
   let anyOneMenus = [];
   let teacherMenus = [];
   let adminMenus = [];
@@ -55,9 +55,9 @@ const MenuBar = (props) => {
   );
 };
 
-MenuBar.propTypes = {
+IndexMenus.propTypes = {
 };
 
 export default connect(({ menus }) => ({
   menus: menus
-})) (MenuBar);
+})) (IndexMenus);

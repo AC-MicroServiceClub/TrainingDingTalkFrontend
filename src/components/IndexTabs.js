@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { TabBar } from 'antd-mobile';
-import styles from './PageBar.css';
+import styles from './IndexTabs.css';
 import indexSvg from '../assets/tab-index.svg';
 import indexActiveSvg from '../assets/tab-index-active.svg';
 import resourceSvg from '../assets/tab-resource.svg';
@@ -9,7 +9,7 @@ import resourceActiveSvg from '../assets/tab-resource-active.svg';
 import mySvg from '../assets/tab-my.svg';
 import myActiveSvg from '../assets/tab-my-active.svg';
 
-class PageBar extends React.Component {
+class IndexTabs extends React.Component {
 
   constructor(props) {
     super(props);
@@ -107,7 +107,7 @@ class PageBar extends React.Component {
 
 };
 
-PageBar.propTypes = {
+IndexTabs.propTypes = {
 };
 
-export default connect() (PageBar);
+export default connect() (IndexTabs);
