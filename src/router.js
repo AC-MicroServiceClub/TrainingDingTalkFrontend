@@ -12,8 +12,6 @@ import AdminTrainingApprovalPage from './routes/AdminTrainingApprovalPage';
 import AdminSigninMangementPage from './routes/AdminSigninMangementPage';
 import AdminFeedbackMangementPage from './routes/AdminFeedbackMangementPage';
 
-const setTitle = title => () => document.title = title;
-
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
