@@ -17,6 +17,7 @@ const app = dva({
 app.model(require('./models/debug').default);
 app.model(require('./models/user').default);
 app.model(require('./models/menus').default);
+app.model(require('./models/courseTypes').default);
 
 // 4. Router
 app.router(require('./router').default);
