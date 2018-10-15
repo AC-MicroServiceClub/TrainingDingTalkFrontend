@@ -18,7 +18,7 @@ export default class AdminTrainingMangementPage extends React.Component {
     return (
       <NavBar
         mode="light"
-        icon={<Icon type="left" />}
+        //icon={<Icon type="left" />}
         onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminTrainingMangement.text}</NavBar>
     );
   }

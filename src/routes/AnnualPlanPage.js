@@ -35,7 +35,7 @@ export default class AnnualPlanPage extends React.Component {
       <div>
         <NavBar
           mode="light"
-          icon={<Icon type="left" />}
+          //icon={<Icon type="left" />}
           onLeftClick={() => this.props.history.push('/')}>{this.props.menus.annualPlan.text}</NavBar>
         <Tabs tabs={tabs}
           initialPage={month}

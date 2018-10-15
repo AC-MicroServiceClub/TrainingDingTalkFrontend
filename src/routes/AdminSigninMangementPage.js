@@ -18,7 +18,7 @@ export default class AdminSigninMangementPage extends React.Component {
     return (
       <NavBar
         mode="light"
-        icon={<Icon type="left" />}
+        //icon={<Icon type="left" />}
         onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminSigninMangement.text}</NavBar>
     );
   }

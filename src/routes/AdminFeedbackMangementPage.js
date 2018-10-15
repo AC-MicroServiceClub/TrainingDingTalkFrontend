@@ -18,7 +18,7 @@ export default class AdminFeedbackMangementPage extends React.Component {
     return (
       <NavBar
         mode="light"
-        icon={<Icon type="left" />}
+        //icon={<Icon type="left" />}
         onLeftClick={() => this.props.history.push('/')}>{this.props.menus.adminFeedbackMangement.text}</NavBar>
     );
   }
