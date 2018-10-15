@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { NavBar, Icon, Tabs, Badge, List } from 'antd-mobile';
+import DocumentTitle from 'react-document-title';
 import styles from './AnnualPlanPage.css';
 
 const tabs = [
@@ -33,10 +34,11 @@ export default class AnnualPlanPage extends React.Component {
     let month = new Date().getMonth();
 	return (
       <div>
-        <NavBar
+        /*<NavBar
           mode="light"
-          //icon={<Icon type="left" />}
-          onLeftClick={() => this.props.history.push('/')}>{this.props.menus.annualPlan.text}</NavBar>
+          icon={<Icon type="left" />}
+          onLeftClick={() => this.props.history.push('/')}>{this.props.menus.annualPlan.text}</NavBar>*/
+        <DocumentTitle title={this.props.menus.annualPlan.text}></DocumentTitle>
         <Tabs tabs={tabs}
           initialPage={month}
           onChange={(tab, index) => { console.log('onChange', index, tab); }}

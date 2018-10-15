@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import { NavBar, Icon } from 'antd-mobile';
+import DocumentTitle from 'react-document-title';
 import styles from './TeacherCourseListPage.css';
 
 @connect(({ user, menus }) => ({
@@ -16,10 +17,11 @@ export default class TeacherCourseListPage extends React.Component {
 
   render() {
     return (
-      <NavBar
+      /*<NavBar
         mode="light"
-        //icon={<Icon type="left" />}
-        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.teacherCourseList.text}</NavBar>
+        icon={<Icon type="left" />}
+        onLeftClick={() => this.props.history.push('/')}>{this.props.menus.teacherCourseList.text}</NavBar>*/
+      <DocumentTitle title={this.props.menus.teacherCourseList.text}></DocumentTitle>
     );
   }
 }
