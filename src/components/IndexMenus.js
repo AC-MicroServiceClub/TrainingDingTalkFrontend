@@ -25,7 +25,11 @@ const IndexMenus = (props) => {
 
   return (
     <div>
-      <div className={styles['sub-title']}>学生专栏</div>
+      <List>
+        <List.Item>
+        <div className={styles['sub-title']}>学生专栏</div>
+        </List.Item>
+      </List>
       <Grid data={anyOneMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
       {
         auth.isTeacher(props.user) ? (
@@ -42,7 +46,11 @@ const IndexMenus = (props) => {
         auth.isAdmin(props.user) ? (
           <div>
             <WhiteSpace size='xs' style={{background: '#eee'}} />
-            <div className={styles['sub-title']}>管理专栏</div>
+            <List>
+              <List.Item>
+                <div className={styles['sub-title']}>管理专栏</div>
+              </List.Item>
+            </List>
             <Grid data={adminMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
           </div>
         ) : (
