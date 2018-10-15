@@ -31,7 +31,7 @@ const IndexMenus = (props) => {
       {
         auth.isTeacher(props.user) ? (
           <div>
-            <WhiteSpace />
+            <WhiteSpace size='xs' style={{background: '#eee'}} />
             <div className={styles['sub-title']}>教学专栏</div>
             <Grid data={teacherMenus} columnNum={4} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
           </div>
