@@ -16,6 +16,10 @@ export default class TrainingListPage extends React.Component {
     };
   }
 
+  switchType(el, index) {
+    alert(el.text);
+  }
+
   render() {
     return (
       <div>
@@ -23,7 +27,7 @@ export default class TrainingListPage extends React.Component {
           mode="light"
           icon={<Icon type="left" />}
           onLeftClick={() => this.props.history.push('/')}>{this.props.menus.trainingList.text}</NavBar>
-        <ButtonGrid items={this.props.courseTypes} colNum={5} history={this.props.history} />
+        <ButtonGrid items={this.props.courseTypes} colNum={5} action={this.switchType.bind(this)} />
         <SearchBar placeholder="课程/老师" maxLength={10} />
       </div>
     );

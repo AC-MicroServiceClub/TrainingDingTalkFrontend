@@ -7,7 +7,7 @@ import auth from '../utils/auth';
 const ButtonGrid = (props) => {
   return (
     <div>
-      <Grid data={props.items} columnNum={props.colNum} hasLine={false} activeStyle={false} onClick={(el, index) => { props.history.push(el.path) }} />
+      <Grid data={props.items} columnNum={props.colNum} hasLine={false} activeStyle={false} onClick={(el, index) => { props.action(el, index) }} />
     </div>
   );
 };
